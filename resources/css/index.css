@@ -1,0 +1,313 @@
+* {
+    font-family: "Koulen", Times, sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: hsla(0, 0%, 0%, 0.842);
+}
+
+section {
+    display: block;
+}
+
+.nav-li a {
+    text-decoration: none;
+    text-shadow: 4px 4px rgb(59, 32, 9, 0.966);
+    color: seashell;
+}
+
+/* Header - Had to add overflow hidden to hide the overflow from logo because it is a picture */
+.header-container {
+    display: flex;
+    height: 6rem;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 5px  solid rgba(59, 32, 9, 0.966);
+    background-color: #1C1C1C;
+    overflow: hidden;
+    position: fixed;
+    z-index: 100;
+}
+/* Logo was too small and barely visible that is why it has -2rem margin top and bigger height than header */
+.logo {
+    display: inline-flex;
+    width: 10rem;
+    height: 10rem;
+    margin-top: -2rem;
+}
+/* Navigation List */
+.nav ul {
+    display: flex;
+    font-size: 2rem;
+    margin-right: 0.5rem;
+    padding-top: 1.6rem;
+    word-spacing: -0.2rem;
+}
+/* Navigation list items*/
+.nav-li li {
+    display: block;
+    padding-right: 1.7rem;
+    padding-top: 0.5rem;
+}
+/* Banner container and text */
+.banner {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    max-height: fit-content;
+    text-align: center;
+    font-size: 3rem;
+    line-height: 3.5rem;
+}
+/* Banner Image */
+.banner img {
+    margin-top: 10rem;
+    margin-bottom: 1.5rem;
+    width: 20rem;
+    height: 20rem;
+}
+/* True Beard */
+.banner-wrapper a {
+    font-size: larger;
+    font-weight: bolder;
+}
+/* Products Image container */
+.image-container-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.image-container {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1000px;
+    max-height: fit-content;
+    flex-wrap: wrap;
+    margin-bottom: 10rem;
+}
+/* Individual image settings */
+.image-container img {
+    max-height: 23rem;
+    max-width: 23rem;
+    border-radius: 2rem;
+    margin-top: 12rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    border: 4px dashed silver;
+}
+/* Image text */
+.img-wrapper {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+}
+
+.img-wrapper h1 {
+    font-size: larger;
+    margin-bottom: 1rem;
+}
+
+.img-wrapper h1,
+.img-wrapper h2 {
+    margin-left: 2rem;
+}
+
+.img-wrapper a {
+    text-decoration: none;
+    color: black;
+}
+/* Buttons (they lead nowhere but would ideally lead to a seperate page to buy the items) */
+.button {
+    background-color: #1C1C1C;
+    border-radius: 10%;
+    padding: 0.2rem;
+}
+/* Customers */
+.customer-container {
+    display: flex;
+    width: 100%;
+    max-height: fit-content;
+    padding-bottom: 20rem;
+}
+
+.customer-title {
+    font-size: 5rem;
+    text-align: center;
+    padding-bottom: 10rem;
+}
+
+.customer1 {
+    display: block;
+    float: left;
+}
+
+/* Satisfied Customers */
+.customer1 img {
+    max-width: 30rem;
+    max-height: 30rem;
+    border-radius: 2rem;
+    border: 4px dashed silver;
+    display: block;
+    float: left;
+    margin-right: 2rem;
+}
+/* Customer quote */
+.customer1 h1 {
+    font-size: 2.5rem;
+    margin-right: 5rem;
+}
+
+.customer2 {
+    display: block;
+    float: right;
+}
+
+.customer2 img {
+    max-width: 30rem;
+    max-height: 30rem;
+    border-radius: 2rem;
+    border: 4px dashed silver;
+    float: right;
+}
+/* Customer quote */
+.customer2 h1 {
+    font-size: 2.5rem;
+    margin-top: 3rem;
+}
+
+@media only screen and (max-width: 1640px) {
+    .customer1 h1,
+    .customer2 h1 {
+        font-size: 2rem;
+        padding-top: 5rem;
+    }
+    .header-container, .banner, .product, .customer-title, .customer-container, .about-title, .about-container-img, .about-container, .contact, .footer {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 1480px) {
+    .customer1 img,
+    .customer2 img {
+        max-width: 20;
+        max-height: 20rem;
+    }
+    .about-wrapper-img {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .header-container, .banner, .product, .customer-title, .customer-container, .about-title, .about-container-img, .about-container, .contact, .footer {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .customer-container {
+        display: block;
+        margin-bottom: 50rem;
+    }
+    .header-container, .banner, .product, .customer-title, .customer-container, .about-title, .about-container-img, .about-container, .contact, .footer {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .customer-container {
+        padding-bottom: 30rem;
+
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .header-container {
+        justify-content: center;
+    }
+    .about-wrapper-img {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .header-container, 
+    .banner, 
+    .product, 
+    .customer-title, 
+    .customer-container, 
+    .about-title, 
+    .about-container-img, 
+    .about-container, 
+    .contact, 
+    .footer {
+        margin: auto;
+    }
+}
+
+/* About container */
+.about-container-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-wrapper-img {
+    display: inline-flex;
+    gap: 10rem;
+    font-size: 3rem;
+    text-align: center;
+}
+/* Employee images */
+.CEO img,
+.web-dev img {
+    max-width: 50rem;
+    max-height: 50rem;
+    border-radius: 2rem;
+    border: 4px dashed silver;
+}
+/* About text */
+.about-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.about {
+    font-size: 2rem;
+    margin-top: 5rem;
+    line-height: 2rem;
+    border: 5px solid black;
+    background-color: rgba(10, 10, 10, 0.699);
+    color: rgba(255, 245, 238, 0.226);
+    text-align: center;
+    max-width: 80%;
+    display: flex;
+    margin-bottom: 10rem;
+}
+
+.about-title h1 {
+    text-align: center;
+    padding-bottom: 10rem;
+    font-size: 5rem;
+}
+
+.contact {
+  text-align: center;
+  font-size: 5rem;
+  line-height: 7rem;
+  padding-bottom: 5rem;
+}
+
+.footer {
+    text-align: center;
+    background-color: #1C1C1C;
+    max-height: 5rem;
+    width: 100%;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    font-size: 1.2rem;
+    color: seashell;
+    letter-spacing: 0.3rem;
+}
