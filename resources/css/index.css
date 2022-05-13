@@ -260,6 +260,7 @@ section {
     width: 100%;
     display: flex;
     justify-content: center;
+    color: seashell;
 }
 
 .about-wrapper-img {
@@ -280,6 +281,7 @@ section {
 .about-wrapper {
     display: flex;
     justify-content: center;
+    color: seashell;
 }
 
 .about {
@@ -293,12 +295,14 @@ section {
     max-width: 80%;
     display: flex;
     margin-bottom: 10rem;
+    color: seashell;
 }
 
 .about-title h1 {
     text-align: center;
     padding-bottom: 10rem;
     font-size: 5rem;
+    color: seashell;
 }
 
 .contact {
@@ -306,6 +310,7 @@ section {
   font-size: 5rem;
   line-height: 7rem;
   padding-bottom: 5rem;
+  color: seashell;
 }
 
 .footer {
