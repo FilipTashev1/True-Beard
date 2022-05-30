@@ -313,6 +313,7 @@ section {
 }
 
 .footer {
+    border-top: 5px  solid rgba(59, 32, 9, 0.966);
     text-align: center;
     background-color: #1C1C1C;
     max-height: 5rem;
